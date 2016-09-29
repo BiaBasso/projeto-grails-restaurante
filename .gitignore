@@ -1,0 +1,11 @@
+/.idea/
+*.iml
+/target/
+/lib
+/build/
+/.gradle/
+*.classpath
+*.project
+*.settings/
+*.application.properties
+*.pdf
