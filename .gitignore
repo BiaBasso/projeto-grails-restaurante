@@ -10,3 +10,4 @@
 *.application.properties
 *.pdf
 /test/
+/web-app/
