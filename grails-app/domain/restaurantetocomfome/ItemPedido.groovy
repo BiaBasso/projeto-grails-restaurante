@@ -12,5 +12,9 @@ class ItemPedido {
     static belongsTo = [Pedido]
 
     static constraints = {
+
+        quantidade min: 0
+        valorVenda min: 0
+        observacao nullable: true, blank: true
     }
 }

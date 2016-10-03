@@ -15,6 +15,10 @@ class Produto {
     static belongsTo = [Cliente]
 
     static constraints = {
+        //nullable para valores nulos e blanck para espaços em branco
+
+        nome nullable: false, blank: false
+        preco min: 0
     }
 
     static mapping = {
