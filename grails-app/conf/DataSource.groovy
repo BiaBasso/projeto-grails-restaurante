@@ -12,8 +12,8 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:mysql://localhost/restaurante"
+            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:mysql://localhost/restaurantes"
             username = "root"
             password = "root.."
         }
@@ -21,7 +21,7 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/restaurante"
+            url = "jdbc:mysql://localhost/restaurantes"
             username = "root"
             password = "root.."
         }
@@ -29,7 +29,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/restaurante"
+            url = "jdbc:mysql://localhost/restaurantes"
             username = "root"
             password = "root.."
         }
