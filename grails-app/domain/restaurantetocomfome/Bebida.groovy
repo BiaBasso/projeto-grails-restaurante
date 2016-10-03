@@ -1,13 +1,18 @@
 package restaurantetocomfome
 
-class Bebida {
+class Bebida extends Produto{
 
     Double liquido
     String unidade
 
     static constraints = {
 
-        liquido min: 0
+        liquido min: new Double(0)
         unidade nullable: false, blank: false, inList: ["L", "ml"]
+    }
+
+    static mapping = {
+
+        discriminator value: "BEBIDA"
     }
 }
