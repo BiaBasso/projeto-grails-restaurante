@@ -12,7 +12,7 @@ class Pedido {
 
     static constraints = {
 
-        valorTotal min: 0
+        valorTotal min: new Double(0)
         cliente nullable: false
     }
 }
