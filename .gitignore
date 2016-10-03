@@ -9,3 +9,4 @@
 *.settings/
 *.application.properties
 *.pdf
+/test/
