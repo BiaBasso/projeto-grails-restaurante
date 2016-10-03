@@ -8,6 +8,8 @@ class Pedido {
 
     Cliente cliente
 
+    static hasMany = [itens:ItemPedido]
+
     static constraints = {
     }
 }
