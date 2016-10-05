@@ -23,8 +23,6 @@ class Produto {
 
     static mapping = {
 
-// não será criado tabela por hierarquia e sim por subclasse, ou seja, teremos varias tabelas ligadas a tabela mãe
-        tablePerHierarchy(false)
         discriminator column: "tipo", value: "GERAL" // atributo que ira discriminar no banco de dados
         clientes joinTable:[name:"preferencias_clientes", key: "id_produto", column: "id_cliente"]
     }
