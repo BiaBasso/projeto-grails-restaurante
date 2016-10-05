@@ -7,6 +7,8 @@ class Estoque {
 
     Produto produto
 
+    static belongsTo = [Produto]
+
     static constraints = {
 
         quantidade min: 0
